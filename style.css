@@ -1,0 +1,14 @@
+header, nav, main, footer { /* znaczniki, ktorych bedzie dotyczyl styl, rodzielone przecinkami */
+    display: block; /* sposob wyswietlania elementow na stronie */
+    width: 1078px;
+    height: 150px;
+    color: #c51d1d; /* kolor tekstu w zapisie szesnastkowym */
+    background-color: #2585d4; /* kolor tla*/
+}
+main { 
+    height: auto; 
+}
+body {
+    color: #ffffff; /* kolor tekstu w zapisie szesnastkowym */
+    background-color: #000000; /* kolor tla*/
+    }
