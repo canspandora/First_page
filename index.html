@@ -7,13 +7,30 @@
     <link href="style.css" rel="stylesheet"> <!--sluzy do zalinkowania konkretnego stylu, mozna ich umiescic kilka na jednej stronie.-->
 </head>
 <body>
-    <div id=”container”> <!--div to blok z zawartoscia, jak grupa w photoshopie-->
+    <div id="container"> <!--div to blok z zawartoscia, jak grupa w photoshopie-->
         <header> <!-- tytuł strony-->
                 <img src='obrazek1.png' height=100 /> <!--wstawia obrazek, drugi parametr okresla jego wysokosc-->
                 Jakis tam tytul na pierwsza strone.
         </header>
         <nav>Tu będzie menu</nav>
-        <main>Tu będzie środek</main>
+        <main>
+                <div id="st-row" class=”row”> <!--id - identyfikator, nazwa do ktorej pozniej mozna sie odniesc w reszcie kodu, class - klasa, to taki styl dla grupy elementow. Zamiast row mona wpisac dowolny tekst, nazwe, ale bez spacji-->
+                        <div id="col-left">Nie ulega raczej wątpliwości, że ten sezon należy do Kamila Stocha. <br /> Imponujący rewelacyjną formą skoczek zdążył już zapisać się w historii Turnieju Czterech Skoczni wygrywając każdy z konkursów. <br /> Do tej pory ta sztuka udała się tylko Svenowi Hannawaldowi szesnaście lat temu. <br /> Polak zresztą pod względem punktacji okazał się od niego lepszy.</div>
+                        <div id="col-center"><q>Niektóre trendy wśród polskich celebrytek rozprzestrzeniają się jak epidemia.</q> </div> <!-- q to tag do cytowania od quotations-->
+                </div> 
+                <div id="nd-row" class=”row”>
+                    <h1>Projektowanie czcionek</h1> <!--h1 to najwiekszy naglowek, h2 mniejszy, itd-->
+                    <h2>Kroje szeryfowe</h2>
+                    <p>Czcionki szeryfowe mają niewielkie poprzeczne lub ukośne zakończenia kresek głownych liter (zwane szeryfami). Ogolnie rzecz biorąc, czcionki szeryfowe sprawiają, że niektore rodzaje tekstu łatwiej się czyta.</p>
+                    <h3>Baskerville</h3>
+                    <h4>Opis</h4>
+                    <p>Opis czcionki Baskerville.</p> <!--paragrafy - opisy naglowkow-->
+                    <h4>Historia</h4>
+                    <p>Historia czcionki Baskerville.</p>
+                    <h3>Georgia</h3>
+                    <p>Opis oraz historia czcionki Georgia.</p>
+                </div>
+        </main>
         <footer>A tu stopka</footer>
     </div>
 </body>

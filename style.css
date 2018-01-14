@@ -6,9 +6,44 @@ header, nav, main, footer { /* znaczniki, ktorych bedzie dotyczyl styl, rodzielo
     background-color: #2585d4; /* kolor tla*/
 }
 main { 
-    height: auto; 
+    height: auto;
+    overflow:hidden; /* styl overflow mowi o tym co ma sie dziac z elementami, ktore wystaja poza wysnaczone pole, hidden sprawia ze sa niewidoczne */ 
 }
 body {
     color: #ffffff; /* kolor tekstu w zapisie szesnastkowym */
     background-color: #000000; /* kolor tla*/
+    margin: 0px; /* zeruje marginesy */
+    text-align: center; /* wyrownaj tekst, centruje tekst strony*/
+}
+#col-left { /* # oznacza odniesienie sie do konkretnego elementu zapisanego pod nazwa po # w indeksie i tu nadajemy mu parametry
+            jesli chcemy nadac parametry jakiejs klasie robimy to z . zamiast #, np. .nazwaklasy */
+    background-color:#006acc;
+    width: 200px;
+    height: 200px; /* aby kolumny zmießciﬁy sié obok siebie suma ich szerokoßci musi byç mniejsza lub rowna 1078px */
+    float: left;  /* oznacza to, ze ta kolumna zostaje po lewej stronie, a ta co jest nizej przechodzi na jej prawa strone */
+    text-align: left; 
+    overflow: hidden;
+}
+#col-center {
+    background-color:#96cc00;
+    width: 400px;
+    height: auto;
+    float: left;
+}
+footer {
+    clear: both; /* wylacza float */
     }
+#container {
+    position: relative; /* pozycja na stronie, mozna ja zmienic na 3 sposoby: relative - wzgledem innych elementow, absolute - wzgledem poczatku strony, fixed - wzgledem okna przegladarki */
+    margin: auto;
+    width: 1078px;
+    height: auto;
+    overflow: hidden;
+    border: 30px solid #ffffff;
+}
+#nd-row {
+    clear: both;
+}
+q {
+    color:#a80000;
+}
